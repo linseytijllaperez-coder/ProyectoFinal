@@ -2,14 +2,14 @@
   color-scheme: dark;
   font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
   background: linear-gradient(135deg, #0a0e27 0%, #1a1530 100%);
-  color: #e0e6ff;
+  color: #ffffff;
 }
 
 body {
   margin: 0;
   min-height: 100vh;
   background: linear-gradient(135deg, #0a0e27 0%, #1a1530 100%);
-  color: #e0e6ff;
+  color: #ffffff;
 }
 
 #app {
@@ -31,7 +31,7 @@ body {
 }
 
 .nav-link {
-  color: #b0b8ff !important;
+  color: #ffffff !important;
   transition: all 0.3s ease;
 }
 
@@ -54,7 +54,7 @@ body {
 
 .card {
   background: linear-gradient(135deg, rgba(30, 25, 60, 0.9), rgba(40, 35, 70, 0.9));
-  color: #e0e6ff;
+  color: #ffffff;
   border: 1px solid rgba(131, 56, 236, 0.2) !important;
 }
 
@@ -146,21 +146,22 @@ body {
 }
 
 .text-muted {
-  color: #a0a8d8 !important;
+  color: #ffffff !important;
+  opacity: 0.9;
 }
 
 .fw-bold {
-  color: #e0e6ff;
+  color: #ffffff;
 }
 
 h1, h2, h3, h4, h5 {
-  color: #e0e6ff;
+  color: #ffffff;
 }
 
 .card-title {
-  color: #e0e6ff !important;
+  color: #ffffff !important;
 }
 
 .lead {
-  color: #b0b8ff !important;
+  color: #e8e8ff !important;
 }
