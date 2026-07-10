@@ -16,6 +16,18 @@ body {
   min-height: 100vh;
 }
 
+section p {
+  color: #ffffff;
+}
+
+section span {
+  color: #ffffff;
+}
+
+section li {
+  color: #ffffff;
+}
+
 .navbar-brand {
   letter-spacing: 0.08em;
   background: linear-gradient(135deg, #ff006e, #8338ec, #3a86ff);
@@ -145,12 +157,28 @@ body {
   color: #3a86ff !important;
 }
 
+.card-body span {
+  color: #ffffff;
+}
+
+.card-body p {
+  color: #ffffff;
+}
+
+.card-body li {
+  color: #ffffff;
+}
+
 .text-muted {
   color: #ffffff !important;
-  opacity: 0.9;
+  opacity: 1 !important;
 }
 
 .fw-bold {
+  color: #ffffff;
+}
+
+.fw-semibold {
   color: #ffffff;
 }
 
@@ -163,5 +191,9 @@ h1, h2, h3, h4, h5 {
 }
 
 .lead {
+  color: #ffffff !important;
+}
+
+.small {
   color: #e8e8ff !important;
 }
