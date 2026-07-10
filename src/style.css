@@ -1,0 +1,50 @@
+:root {
+  color-scheme: dark;
+  font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
+  background: linear-gradient(135deg, #07111f 0%, #12253d 100%);
+  color: #f5f7fb;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #07111f 0%, #12253d 100%);
+  color: #f5f7fb;
+}
+
+#app {
+  min-height: 100vh;
+}
+
+.navbar-brand {
+  letter-spacing: 0.08em;
+}
+
+.hero-section {
+  background: linear-gradient(120deg, rgba(10, 24, 42, 0.95), rgba(16, 39, 67, 0.9));
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.glass-card {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  backdrop-filter: blur(12px);
+}
+
+.card {
+  background: rgba(255,255,255,0.95);
+  color: #132238;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #4f7cff, #3261d7);
+  border: none;
+}
+
+.btn-outline-primary, .btn-outline-light, .btn-outline-secondary {
+  border-color: rgba(255,255,255,0.18);
+}
+
+.progress {
+  background-color: #dfe8f8;
+}
