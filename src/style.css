@@ -180,17 +180,20 @@ section li {
   color: #ffffff;
 }
 
-.text-muted {
+.text-muted,
+.small,
+.lead,
+.text-secondary,
+.text-dark,
+.text-body,
+.text-white {
   color: #ffffff !important;
   opacity: 1 !important;
 }
 
-.fw-bold {
-  color: #ffffff;
-}
-
+.fw-bold,
 .fw-semibold {
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 h1, h2, h3, h4, h5 {
