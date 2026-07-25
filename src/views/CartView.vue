@@ -1,9 +1,25 @@
 <script setup lang="ts">
-import { computed } from 'vue'
+import { computed, ref } from 'vue'
 import { useCatalogStore } from '../stores/catalog'
 
 const store = useCatalogStore()
 const subtotal = computed(() => store.totalPrice)
+const paymentAccount = ref('')
+const paymentError = ref('')
+const purchaseCompleted = ref(false)
+
+const finishPurchase = () => {
+  if (!paymentAccount.value.trim()) {
+    paymentError.value = 'Ingresa una cuenta para poder completar la compra.'
+    purchaseCompleted.value = false
+    return
+  }
+
+  paymentError.value = ''
+  purchaseCompleted.value = true
+  store.clearCart()
+  paymentAccount.value = ''
+}
 </script>
 
 <template>
@@ -49,7 +65,24 @@ const subtotal = computed(() => store.totalPrice)
             <span>Total</span>
             <span>Bs. {{ subtotal.toLocaleString('es-BO') }}</span>
           </div>
-          <button class="btn btn-success w-100 mt-4" @click="store.clearCart()">Finalizar compra</button>
+
+          <div class="mt-4">
+            <label for="payment-account" class="form-label fw-semibold">Cuenta para pagar</label>
+            <input
+              id="payment-account"
+              v-model="paymentAccount"
+              type="text"
+              class="form-control"
+              placeholder="Ej. 123456789"
+              @input="paymentError = ''"
+            />
+            <p v-if="paymentError" class="text-danger small mt-2 mb-0">{{ paymentError }}</p>
+            <p v-else-if="purchaseCompleted" class="text-success small mt-2 mb-0">
+              Compra realizada correctamente. Gracias por tu pago.
+            </p>
+          </div>
+
+          <button class="btn btn-success w-100 mt-4" @click="finishPurchase()">Finalizar compra</button>
         </div>
       </div>
     </div>
